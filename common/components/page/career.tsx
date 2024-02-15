@@ -5,7 +5,7 @@ import React from 'react';
 
 const Career = () => {
   return (
-    <section id="career" className=" flex py-14 lg:h-dvh lg:mt-0 lg:mb-0">
+    <section id="career" className=" flex py-14 lg:h-max lg:mt-0 lg:mb-0">
       <div className="container px-4 lg:px-72 w-full">
         <h1 className="font-bold text-3xl text-center text-gray1 font-poppins dark:text-white">Career</h1>
         <h2 className="text-center mt-1 font-poppins">My professional career journey.</h2>

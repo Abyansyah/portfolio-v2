@@ -1,4 +1,4 @@
-import { AboutSection, Career, CertificatePage, HeroSection, ProjectSection, SkillSection } from 'ahmad/common/components/page';
+import { AboutSection, Career, CertificatePage, Footer, HeroSection, ProjectSection, SkillSection } from 'ahmad/common/components/page';
 import Navbar from 'ahmad/common/components/Layout/Navbar';
 import ButtomBar from 'ahmad/common/components/Layout/ButtomBar';
 import AOS from 'aos';
@@ -18,6 +18,7 @@ export default function Home() {
       <ProjectSection />
       <CertificatePage />
       <Career />
+      <Footer />
       <ButtomBar />
     </>
   );
