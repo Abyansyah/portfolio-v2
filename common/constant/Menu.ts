@@ -24,15 +24,15 @@ export const MenuBar = [
     title: 'Projects - Ahmad Abyansyah',
   },
   {
-    name: 'Certificate',
-    path: '/#certificate',
-    section: 'certificate',
-    title: 'Certificate - Ahmad Abyansyah',
-  },
-  {
     name: 'Career',
     path: '/#career',
     section: 'career',
     title: 'Career - Ahmad Abyansyah',
+  },
+  {
+    name: 'Certificate',
+    path: '/#certificate',
+    section: 'certificate',
+    title: 'Certificate - Ahmad Abyansyah',
   },
 ];

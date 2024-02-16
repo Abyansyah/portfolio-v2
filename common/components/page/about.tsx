@@ -9,7 +9,7 @@ const AboutSection = () => {
         <h2 className="text-center mt-1 font-poppins">Short description of myself</h2>
         <div className="flex flex-col items-center mt-14 lg:flex-row lg:justify-between">
           <div className="w-full" data-aos="fade-up">
-            <Image className="w-[410px] h-[354px] object-cover rounded-2xl" src={'/img/about.webp'} width={410} height={400} alt="About" />
+            <Image className="w-[410px] h-[354px] object-cover rounded-2xl" src={'/img/about.webp'} width={410} height={400} alt="About" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
           </div>
           <div className="flex flex-col gap-y-10 lg:w-11/12 " data-aos="fade-up">
             <p className="text-gray-700 mt-6 md:mt-0 font-poppins lg:text-start w-full text-justify dark:text-[#D4D4D4]">

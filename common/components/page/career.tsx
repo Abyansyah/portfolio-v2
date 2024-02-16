@@ -5,14 +5,14 @@ import React from 'react';
 
 const Career = () => {
   return (
-    <section id="career" className=" flex py-14 lg:h-max lg:mt-0 lg:mb-0">
+    <section id="career" className=" flex py-14 lg:h-max lg:mt-0 lg:mb-0 dark:bg-[#191919]">
       <div className="container px-4 lg:px-72 w-full">
         <h1 className="font-bold text-3xl text-center text-gray1 font-poppins dark:text-white">Career</h1>
         <h2 className="text-center mt-1 font-poppins">My professional career journey.</h2>
         <div className="grid md:grid-cols-2 mt-16 gap-10" data-aos="fade-up">
           {career?.map((item: any, index: number) => (
-            <div className="bg-white rounded-xl transition-all duration-300 shadow-sm flex items-center py-4 px-6 gap-5 border border-neutral-300 dark:border-neutral-900 dark:bg-neutral-800">
-              <Image src={item?.img} width={55} height={55} alt={item?.name} />
+            <div className="bg-white rounded-xl transition-all duration-300 shadow-sm flex items-center py-4 px-6 gap-5 border border-neutral-300 dark:border-neutral-900 dark:bg-neutral-800" key={index}>
+              <Image className="w-[55px] " src={item?.img} width={2560} height={1440} alt={item?.name} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
               <div className="space-y-1">
                 <h6>{item?.name}</h6>
                 <div className="text-sm text-neutral-600 dark:text-neutral-400 space-y-2">

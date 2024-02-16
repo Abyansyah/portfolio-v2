@@ -9,7 +9,7 @@ const CertificatePage = () => {
   const [showModal, setShowModal] = useState<boolean>(false);
   return (
     <>
-      <section id="certificate" className="flex justify-center items-center h-full py-14 lg:py-20 lg:mt-0 lg:mb-0 dark:bg-[#191919] ">
+      <section id="certificate" className="flex justify-center items-center h-full py-14 lg:py-20 lg:mt-0 lg:mb-0  ">
         <div className="container px-4 lg:px-72">
           <h1 className="font-bold text-3xl text-center text-gray1 font-poppins dark:text-white">Certificates</h1>
           <h2 className="text-center mt-1 font-poppins">Some of the certificates that I got</h2>
@@ -21,7 +21,7 @@ const CertificatePage = () => {
                 target="_blank"
                 className="rounded-xl transition-all w-[343.2px] duration-300 shadow-sm lg:hover:shadow-md relative border overflow-hidden dark:bg-neutral-800 border-neutral-200 dark:border-neutral-800 lg:hover:scale-[102%] cursor-pointer "
               >
-                <Image src={item.img} width={200} height={100} className="w-full  object-cover aspect-video" alt="" />
+                <Image src={item.img} width={2560} height={1440} className="w-full  object-cover aspect-video" alt={item?.name} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                 <div className="flex flex-col justify-between p-3 space-y-2">
                   <h3 className="text-lg font-poppins cursor-pointer text-neutral-700 dark:text-neutral-300 lg:hover:text-teal-800 dark:hover:text-teal-400 transition-all duration-300">{item?.name}</h3>
                 </div>
@@ -55,7 +55,7 @@ const CertificatePage = () => {
                   target="_blank"
                   className="rounded-xl transition-all w-[343.2px] duration-300 shadow-sm lg:hover:shadow-md relative border overflow-hidden dark:bg-neutral-800 border-neutral-200 dark:border-neutral-800 lg:hover:scale-[102%] cursor-pointer "
                 >
-                  <Image src={item.img} width={200} height={100} className="w-full  object-cover aspect-video" alt="" />
+                  <Image src={item.img} width={2560} height={1440} className="w-full  object-cover aspect-video" alt="" />
                   <div className="flex flex-col justify-between p-3 space-y-2">
                     <h3 className="text-lg font-poppins cursor-pointer text-neutral-700 dark:text-neutral-300 lg:hover:text-teal-800 dark:hover:text-teal-400 transition-all duration-300">{item?.name}</h3>
                   </div>

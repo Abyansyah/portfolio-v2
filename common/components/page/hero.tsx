@@ -1,11 +1,8 @@
 import Link from 'next/link';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import Styles from 'ahmad/common/styles/customs.module.css';
-import { useState, useEffect } from 'react';
-import useWindowSize from 'ahmad/common/hooks';
 
 const HeroSection = () => {
-  const isMobile = useWindowSize();
 
   return (
     <section id="home" className="h-screen flex items-center justify-center dark:bg-[#191919]">

@@ -69,7 +69,14 @@ const ProjectSection = () => {
           </div>
           <div className="px-4 rounded">
             <div className="flex flex-col gap-5 justify-center">
-              <Image className="w-full rounded-lg duration-700 ease-in-out scale-100 blur-0 grayscale-0" src={modalData?.img} width={200} height={200} alt={modalData?.name} />
+              <Image
+                className="w-full rounded-lg duration-700 ease-in-out scale-100 blur-0 grayscale-0"
+                src={modalData?.img}
+                width={2560}
+                height={1440}
+                alt={modalData?.name}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              />
               <p className="text-base text-justify text-neutral-600 font-poppins dark:text-neutral-300">{modalData?.desc}</p>
               <div className="flex gap-x-6">
                 <Link href={modalData?.github} target="_blank" className="flex items-center gap-x-3">
@@ -101,18 +108,7 @@ const ProjectSection = () => {
                   onMouseLeave={handleImageLeave}
                   className="group bg-white dark:bg-transparent rounded-full w-16 h-16 flex justify-center relative items-center cursor-pointer"
                 >
-                  <Image
-                    draggable={false}
-                    src={item.img}
-                    width={60}
-                    height={60}
-                    alt="gambar"
-                    className="w-12 h-12 group absolute"
-                    style={{
-                      maxWidth: '100%',
-                      height: 'auto',
-                    }}
-                  />{' '}
+                  <Image draggable={false} src={item.img} width={60} height={60} alt={item?.name} />{' '}
                   {showTooltip === index && <span className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs font-poppins p-2 rounded">✨{item.name}</span>}
                 </motion.div>
               ))}

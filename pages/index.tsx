@@ -7,17 +7,21 @@ import { useEffect } from 'react';
 
 export default function Home() {
   useEffect(() => {
-    AOS.init({ duration: 1000 });
+    AOS.init({ duration: 1000, once: true });
   }, []);
   return (
     <>
-      <Navbar />
-      <HeroSection />
-      <AboutSection />
-      <SkillSection />
-      <ProjectSection />
-      <CertificatePage />
-      <Career />
+      <header>
+        <Navbar />
+      </header>
+      <main>
+        <HeroSection />
+        <AboutSection />
+        <SkillSection />
+        <ProjectSection />
+        <Career />
+        <CertificatePage />
+      </main>
       <Footer />
       <ButtomBar />
     </>
