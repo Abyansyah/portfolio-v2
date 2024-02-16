@@ -11,17 +11,15 @@ export default function Home() {
   }, []);
   return (
     <>
-      <header>
-        <Navbar />
-      </header>
-      <main>
-        <HeroSection />
-        <AboutSection />
-        <SkillSection />
-        <ProjectSection />
-        <Career />
-        <CertificatePage />
-      </main>
+      <Navbar />
+
+      <HeroSection />
+      <AboutSection />
+      <SkillSection />
+      <ProjectSection />
+      <Career />
+      <CertificatePage />
+
       <Footer />
       <ButtomBar />
     </>

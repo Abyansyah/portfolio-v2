@@ -108,7 +108,7 @@ const ProjectSection = () => {
                   onMouseLeave={handleImageLeave}
                   className="group bg-white dark:bg-transparent rounded-full w-16 h-16 flex justify-center relative items-center cursor-pointer"
                 >
-                  <Image draggable={false} src={item.img} width={60} height={60} alt={item?.name} />{' '}
+                  <Image draggable={false} src={item.img} width={2560} height={1440} alt={item?.name}  />{' '}
                   {showTooltip === index && <span className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs font-poppins p-2 rounded">✨{item.name}</span>}
                 </motion.div>
               ))}

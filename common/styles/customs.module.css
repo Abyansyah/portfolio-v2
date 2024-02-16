@@ -1,6 +1,6 @@
 .morph {
-  background-image: url('/img/hero.png');
   border: 4px;
+  overflow: hidden;
   width: 100%;
   height: 100%;
   background-size: cover;

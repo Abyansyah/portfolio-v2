@@ -46,7 +46,7 @@ const CertificatePage = () => {
               <IoClose size={26} onClick={() => setShowModal(!showModal)} className="cursor-pointer" />
             </div>
           </div>
-          <div className="flex flex-col bg-white dark:bg-neutral-800 text-paletteText-primary gap-y-4 px-8 py-6 h-full overflow-y-auto">
+          <div className="flex py-8 flex-col bg-white dark:bg-neutral-800 text-paletteText-primary gap-y-4 md:px-8 md:py-6 h-full overflow-y-auto">
             <div className="flex flex-wrap mb-24 justify-center gap-8 " data-aos="fade-up">
               {certif?.map((item, index) => (
                 <Link
@@ -55,7 +55,7 @@ const CertificatePage = () => {
                   target="_blank"
                   className="rounded-xl transition-all w-[343.2px] duration-300 shadow-sm lg:hover:shadow-md relative border overflow-hidden dark:bg-neutral-800 border-neutral-200 dark:border-neutral-800 lg:hover:scale-[102%] cursor-pointer "
                 >
-                  <Image src={item.img} width={2560} height={1440} className="w-full  object-cover aspect-video" alt="" />
+                  <Image src={item.img} width={2560} height={1440} className="w-full  object-cover aspect-video" alt={item?.name} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                   <div className="flex flex-col justify-between p-3 space-y-2">
                     <h3 className="text-lg font-poppins cursor-pointer text-neutral-700 dark:text-neutral-300 lg:hover:text-teal-800 dark:hover:text-teal-400 transition-all duration-300">{item?.name}</h3>
                   </div>
