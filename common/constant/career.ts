@@ -16,7 +16,7 @@ export const career = [
     lok: 'Jakarta, ID',
     img: '/cubic.jpeg',
     startDate: 'Nov 2023',
-    endDate: 'Present',
-    longDate: '4 Months',
+    endDate: 'Nov 2024',
+    longDate: '1 Years',
   },
 ];
